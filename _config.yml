@@ -4,12 +4,12 @@
 # ---------------------------------------------------------------
 
 # Site
-title: NexT
-subtitle:
-description:
-author: John Doe
+title: 今者山佳
+subtitle: 一事无成，来日方长，明日何多，万事蹉跎
+description: 
+author: 今者山佳
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
@@ -58,6 +58,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      permalink: "/:categories/:title"
       comments: true
 
 # Atom feed
