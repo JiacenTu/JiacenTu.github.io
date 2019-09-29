@@ -1,0 +1,115 @@
+---
+title:  "Python学习：Python 语法"
+date: 2019-09-29 14:00:00 +0800
+categories: Python
+tags: Python 语法
+---
+
+> 摘要：Python 的语法规则
+
+## 注释
+
+### 单行注释
+
+单行注释用 # ，# 后一行的内容视为注释：
+```python
+# 注释：价格为100
+price = 100 
+```
+
+### 多行注释
+
+多行注释使用三个连续的单引号或者双引号为开始，再次三个连续的单引号或双引号为结束，中间内容视为注释：
+```python
+""" 
+注释：
+价格为100
+"""
+price = 100 
+```
+
+## 行和缩进
+
+### 缩进
+
+学习 Python 与其他语言最大的区别就是，Python 的代码块不使用大括号 {} 来控制类，函数以及其他逻辑判断。Python 最具特色的就是用缩进来写模块。
+
+***缩进的空白数量是可变的，但是所有代码块语句必须包含相同的缩进空白数量，这个必须严格执行。***
+
+### 空行
+
+函数之间或类的方法之间用空行分隔，表示一段新的代码的开始。类和函数入口之间也用一行空行分隔，以突出函数入口的开始。
+
+空行与代码缩进不同，空行并不是Python语法的一部分。书写时不插入空行，Python解释器运行也不会出错。但是空行的作用在于分隔两段不同功能或含义的代码，便于日后代码的维护或重构。
+
+## 标识符
+
+标识符就是程序员定义的函数名，变量名
+
+### 命名规则
+
+* 标识符由字母、数字和下划线组成
+* 不能用数字开头
+* 标识符对大小写敏感
+
+### Python 保留字
+
+保留字即关键字，我们不能把它们用作任何标识符名称。Python 的标准库提供了一个 keyword 模块，可以输出当前版本的所有关键字：
+
+```python
+import keyword
+print(keyword.kwlist)
+```
+控制台输出：
+```sh
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+```
+
+## 变量赋值
+
+Python 中定义变量不需要指定变量类型，定义变量语法格式形如 `变量名 = 变量值`：
+```python
+# 给一个变量赋值
+num_int = 123 
+
+# 多个变量赋值
+a = b = c = 1
+
+# 多个变量赋多个值
+a, b, c = 1, 2, "runoob"
+```
+
+## 变量计算
+
+### 数字型变量
+
+Python 中数字型变量是可以直接计算的，`布尔类型 True 视为 1，False 视为 2`：
+```python
+isTrue = True
+isFalse = False 
+
+num_int = 100
+num_float = 3.5
+
+print(num_int + isTrue) # 101
+print(num_int + isFalse) # 100
+
+print(num_float * isTrue) # 3.5
+print(num_int * isFalse) # 0
+```
+
+### 字符串拼接
+
+字符串可以通过 `+` 进行拼接，也可以通过 `*` 拼接多次：
+```python
+first_Name = "张"
+last_Name = "三"
+
+# 通过 + 拼接
+print(first_Name + last_Name) # 张三
+
+# 通过 * 拼接多次
+print(first_Name * 3) # 张张张
+```
+
+***注意：Python 中字符串不能和数字类型变量进行计算***
