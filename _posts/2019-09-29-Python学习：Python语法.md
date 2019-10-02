@@ -113,3 +113,146 @@ print(first_Name * 3) # 张张张
 ```
 
 ***注意：Python 中字符串不能和数字类型变量进行计算***
+
+## if 语句
+
+### 单一情况：if else
+
+示例：
+```python
+langue = "python"
+
+if langue == "python":
+    print("hello python")
+else:
+    print("hello world")
+```
+控制台输出：
+```sh
+hello python
+```
+
+### 多种情况：if elif
+
+示例：
+```python
+langue = "java"
+
+if langue == "python":
+    print("hello python")
+elif langue == "java":
+    print("hello java")
+elif langue == "c":
+    print("hello c")
+else:
+    print("hello world")
+```
+控制台输出：
+```sh
+hello java
+```
+
+## while 语句
+
+while 循环：
+
+```python
+# 九九乘法表
+row = 1
+
+while row <= 9:
+    col = 1
+    while col <= row:
+        print("%d * %d = %d" % (col, row, col * row), end="\t")
+        col += 1
+    print("")
+    row += 1
+
+```
+控制台输出：
+```sh
+1 * 1 = 1	
+1 * 2 = 2	2 * 2 = 4	
+1 * 3 = 3	2 * 3 = 6	3 * 3 = 9	
+1 * 4 = 4	2 * 4 = 8	3 * 4 = 12	4 * 4 = 16	
+1 * 5 = 5	2 * 5 = 10	3 * 5 = 15	4 * 5 = 20	5 * 5 = 25	
+1 * 6 = 6	2 * 6 = 12	3 * 6 = 18	4 * 6 = 24	5 * 6 = 30	6 * 6 = 36	
+1 * 7 = 7	2 * 7 = 14	3 * 7 = 21	4 * 7 = 28	5 * 7 = 35	6 * 7 = 42	7 * 7 = 49	
+1 * 8 = 8	2 * 8 = 16	3 * 8 = 24	4 * 8 = 32	5 * 8 = 40	6 * 8 = 48	7 * 8 = 56	8 * 8 = 64	
+1 * 9 = 9	2 * 9 = 18	3 * 9 = 27	4 * 9 = 36	5 * 9 = 45	6 * 9 = 54	7 * 9 = 63	8 * 9 = 72	9 * 9 = 81	
+[Finished in 0.0s]
+```
+## 运算符
+
+### 算数运算符
+
+<style>
+	table th:nth-child(1)
+	{
+		width: 15%;
+	}
+</style>>
+
+符号 	| 含义 			| 实例
+:-:		| :-:			| :-:
++		| 加				| 10 + 20 = 30
+-		| 减				| 20 - 10 = 10
+*		| 乘				| 10 * 10 = 100
+/		| 除				| 50 / 10 = 5
+//		| 取整数			| 20 / 15 = 1
+%		| 取余数			| 20 % 15 = 5
+**		| 幂				| 3 ** 2 = 9
+
+### 逻辑运算符
+
+* and
+	
+与，同真为真：
+
+```python
+langue = "python"
+flag = True
+
+if langue == "python" and flag == False:
+    print("hello python")
+else:
+    print("hello world")
+```
+控制台输出：
+```sh
+hello world
+```
+
+* or
+
+或，同假为假：
+
+```python
+langue = "python"
+flag = True
+
+if langue == "python" or flag == False:
+    print("hello python")
+else:
+    print("hello world")
+```
+控制台输出：
+```sh
+hello python
+```
+
+* not
+
+非，结果相反：
+```python
+flag = True
+
+if not flag == False:
+    print("hello python")
+else:
+    print("hello world")
+```
+控制台输出：
+```sh
+hello python
+```

@@ -19,12 +19,13 @@ jekyll的主题可以自由更换，一种是在 [rubygems](https://rubygems.org
 	# 默认主题minima
 	gem "minima", "~> 2.5"
 	```
-	
+
 	更换主题，可以看作添加了一个主题依赖，所以在Gemfile文件中添加如下配置
 	```
 	# 以jekyll-theme-primer为例
 	gem 'jekyll-theme-primer', '~> 0.5.3'
 	```
+
 2. 更改_config.yml
 	
 	\_config.yml是配置文件，需要在这里指定使用主题，更改如下配置
@@ -34,6 +35,7 @@ jekyll的主题可以自由更换，一种是在 [rubygems](https://rubygems.org
 	# 更改为
 	theme: jekyll-theme-primer
 	```
+
 3. 重新运行服务器
 	
 	依次运行以下命令

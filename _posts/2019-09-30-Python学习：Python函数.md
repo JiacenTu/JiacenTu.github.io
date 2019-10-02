@@ -1,6 +1,6 @@
 ---
 title:  "Python学习：Python 函数"
-date: 2019-09-29 14:00:00 +0800
+date: 2019-09-30 14:00:00 +0800
 categories: Python
 tags: Python 函数
 ---
@@ -9,13 +9,49 @@ tags: Python 函数
 
 ## 什么是函数
 
+函数是组织好的，可重复使用的，用来实现单一，或相关联功能的代码段。
 
+函数能提高应用的模块性，和代码的重复利用率。你已经知道Python提供了许多内建函数，比如 print()。但你也可以自己创建函数，这被叫做用户自定义函数。
+
+## 自定义函数
+
+### 语法格式 
+
+形式如下：
+```python
+def functionname( parameters ):
+   """函数_文档字符串"""
+   function_suite
+   return [expression]
+```
+
+***函数的注释要写在函数名的下一行，用三个双引号包裹***
+
+### 函数调用
+
+示例：
+```python
+# 定义函数
+def printme( str ):
+   """打印输入的字符串"""
+   print str
+   return
+ 
+# 调用函数
+printme("hello world!")
+printme("hello python!")
+```
+控制台输出：
+```python
+hello world!
+hello python!
+```
 
 ## 常见函数
 
 ### 输入输出相关函数
 
-* #### print
+#### print
 
 打印指定信息到控制台，例：
 ```python
@@ -77,7 +113,7 @@ print("我的名字是 %s ，今年 %d 岁了，身高 %f cm，体重 %.2f 公�
 我的名字是 张三 ，今年 50 岁了，身高 185.500000 cm，体重 65.33 公斤
 ```
 
-* #### input
+#### input
 
 获取键盘的输入信息，用户输入的任何内容 Python 都认为是一个字符串：
 
@@ -94,6 +130,6 @@ please input your name: 张三
 
 ### 数据类型相关
 
-* #### type
+#### type
 
-* #### int，float
+#### int，float
