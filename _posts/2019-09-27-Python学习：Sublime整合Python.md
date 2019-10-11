@@ -68,11 +68,11 @@ table th:first-of-type {
 }
 </style>
 
-输入 	| 选择 									| 作用
-:- 		| :-									| :-
-install | Package Control：Install Package		| 在新出现窗口中输入想要下载的插件名称就可以下载插件
-remove 	| Package Control：Remove Package		| 在新出现列表中选择想要卸载的插件就可以卸载插件
-list	| Package Control：List Package			| 列出所有已经安装的插件
+输入 	    | 选择 									            | 作用
+:- 		    | :-									              | :-
+install   | Package Control：Install Package		| 在新出现窗口中输入想要下载的插件名称就可以下载插件
+remove 	  | Package Control：Remove Package		| 在新出现列表中选择想要卸载的插件就可以卸载插件
+list	    | Package Control：List Package			| 列出所有已经安装的插件
 
 ### Terminus
 
@@ -82,18 +82,14 @@ list	| Package Control：List Package			| 列出所有已经安装的插件
 
 #### 使用方式
 	
-Command + shift + p 调出命令窗口，输入 open：
+Command + shift + p 调出命令窗口：
 
-<style>
-table th:first-of-type {
-  width: 40%;
-}
-</style>
+输入   | 选择                                    | 作用
+:-    | :-                                      | :-
+open  | Terminus: Open Default Shell in Panel	  | 在下半部分以面板的形式打开一个命令窗口
+open  | Terminus: Open Default Shell in View	  | 打开一个新的页面作为命令窗口
 
-选择 									| 作用
-:-										| :-
-Terminus: Open Default Shell in Panel	| 在下半部分以面板的形式打开一个命令窗口
-Terminus: Open Default Shell in View	| 打开一个新的页面作为命令窗口
+
 
 ### SublimeREPL
 

@@ -154,7 +154,10 @@ hello java
 
 ## while 语句
 
-while 循环：
+```python
+while condition:
+    statements
+```
 
 ```python
 # 九九乘法表
@@ -182,6 +185,41 @@ while row <= 9:
 1 * 9 = 9	2 * 9 = 18	3 * 9 = 27	4 * 9 = 36	5 * 9 = 45	6 * 9 = 54	7 * 9 = 63	8 * 9 = 72	9 * 9 = 81	
 [Finished in 0.0s]
 ```
+
+## for 循环
+
+### 普通 for 循环
+
+for 循环可以遍历任何序列的项目，如一个列表或者一个字符串，语法格式如下：
+```python
+for iterating_var in sequence:
+   statements(s)
+```
+例如：
+```python
+for letter in 'Python':     # 第一个实例
+   print '当前字母 :', letter
+ 
+fruits = ['banana', 'apple',  'mango']
+for fruit in fruits:        # 第二个实例
+   print '当前水果 :', fruit
+ 
+print "Good bye!"
+```
+控制台输出：
+```sh
+当前字母 : P
+当前字母 : y
+当前字母 : t
+当前字母 : h
+当前字母 : o
+当前字母 : n
+当前水果 : banana
+当前水果 : apple
+当前水果 : mango
+Good bye!
+```
+
 ## 运算符
 
 ### 算数运算符
