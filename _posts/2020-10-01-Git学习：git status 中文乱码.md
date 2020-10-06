@@ -18,6 +18,7 @@ git config --global core.quotepath false
 
 效果如图：
 
-![截屏2020-10-04 下午2.16.43](/Users/tjc/Pictures/md-picture/截屏2020-10-04 下午2.16.43.png)
+![截屏2020-10-04 下午2.16.43](../assets/images/blog/截屏2020-10-04 下午2.16.43.png) 
 
 红色部分就是文件名，输入之前乱码，输入之后乱码解决。
+
