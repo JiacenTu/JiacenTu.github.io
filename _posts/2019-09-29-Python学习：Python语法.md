@@ -1,5 +1,6 @@
 ---
-title:  "Python学习：Python 语法"
+layout: post
+title: "Python学习：Python 语法"
 date: 2019-09-29 14:00:00 +0800
 categories: Python
 tags: Python 语法
@@ -280,6 +281,7 @@ else 语句内容
 
 * and
 	
+
 与，同真为真：
 
 ```python

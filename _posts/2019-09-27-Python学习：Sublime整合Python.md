@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Python学习：Sublime text3 配置 python"
 date: 2019-09-27 14:00:00 +0800
 categories: Python
@@ -81,7 +82,7 @@ list	    | Package Control：List Package			| 列出所有已经安装的插件
 能够在 Sublime text3 内部打开命令窗口。
 
 #### 使用方式
-	
+
 Command + shift + p 调出命令窗口：
 
 输入 	    | 选择 										| 作用

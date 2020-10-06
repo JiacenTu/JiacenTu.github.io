@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Python学习：Python 模块"
 date: 2019-10-01 14:00:00 +0800
 categories: Python
