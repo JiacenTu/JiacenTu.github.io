@@ -2,8 +2,8 @@
 layout: post
 title: "Mac上使用VsCode搭建C语言开发环境"
 date: 2020-10-04 14:00:00 +0800
-categories: C\/C++
-tags: vscode 开发环境 C/C++
+categories: C++
+tags: vscode 开发环境 C++
 ---
 
 > 摘要：Mac 下使用 vscode 搭建 c 语言开发环境，以及各个配置文件的作用
