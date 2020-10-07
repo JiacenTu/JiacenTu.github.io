@@ -39,7 +39,7 @@ xcode-select --install
   - C++：如图，点击右侧最下方的按钮，然后在搜索栏搜索插件名称就好了
   - Chinese (Simplified) Language Pack for Visual Studio Code：中文包，英文好的忽略
 
-![截屏2020-10-04 下午9.13.04](../assets/images/blog/截屏2020-10-04 下午9.13.04.png)
+![截屏2020-10-04 下午9.13.04](./../assets/images/blog/截屏2020-10-04 下午9.13.04.png)
 
 ## 创建项目
 
