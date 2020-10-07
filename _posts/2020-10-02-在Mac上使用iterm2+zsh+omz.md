@@ -25,7 +25,7 @@ tags: itrem2 zsh ohMyzsh
 
 附一张最终的半窗图：
 
-![截屏2020-10-03 下午6.20.34](/Users/tjc/Pictures/md-picture/截屏2020-10-03 下午6.20.34.png)
+![截屏2020-10-03 下午6.20.34](../assets/images/blog/截屏2020-10-03 下午6.20.34.png)
 
 ## 下载与安装
 
@@ -93,7 +93,7 @@ cd solarized/iterm2-colors-solarized/
 open .
 ```
 
-在打开的finder窗口中，双击 Solarized Dark.itermcolors 和 Solarized Light.itermcolors 即可安装明暗两种配色。
+在打开的finder窗口中，双击 **Solarized Dark.itermcolors** 和 **Solarized Light.itermcolors** 即可安装明暗两种配色。
 
 ### 下载安装主题
 
@@ -107,15 +107,17 @@ cd oh-my-zsh-agnoster-fcamblor/
 ./install
 ```
 
-以上命令会自动将此主题拷贝到 oh my zsh 中的主题中，然后打开 zsh 配置文件，通常为 ~/.zshrc，将ZSH_THEME后面的字段改为agnoster。可以通过 vim 修改，命令如下：
+以上命令会自动将此主题拷贝到 oh my zsh 中的主题中，然后打开 zsh 配置文件，通常为 **~/.zshrc**，修改文件中的 `ZSH_THEME` 字段。可以通过 vim 修改，命令如下：
 
 ```shell
 vim ~/.zshrc
 ```
 
-改为如图：
+修改为：
 
-![截屏2020-10-03 下午10.20.46](/Users/tjc/Pictures/md-picture/截屏2020-10-03 下午10.20.46.png)
+```
+ZSH_THEME="agnoster"
+```
 
 修改完后按一下 Esc，然后输入 :wq 回车一下退出 vim。然后运行以下命令使配置生效：
 
@@ -135,7 +137,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 vim ~/.zshrc
 ```
 
- 将 plugins 这一项添加 zsh-syntax-highlighting，并在下面加上如下一句：
+ 将 **plugins** 这一项添加 **zsh-syntax-highlighting**，并在下面加上如下一句：
 
 ```sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -143,7 +145,7 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 
 修改后如图所示：
 
-![截屏2020-10-03 下午10.28.57](/Users/tjc/Pictures/md-picture/截屏2020-10-03 下午10.28.57.png)
+![截屏2020-10-03 下午10.28.57](../assets/images/blog/截屏2020-10-03 下午10.28.57.png)
 
 然后退出 vim。
 
@@ -157,22 +159,16 @@ source ~/.zshrc
 
 最后一步就是修改 iterm2 配置，让他更好用。
 
-打开 iterm2，Command + O 打开 Profiles 如下图：
+打开 iterm2，**⌘O** 打开 Profiles，在 **Profiles > Edit Profiles > Colors > Color Presets** 中根据自己的喜好选择刚刚下好的配色方案：
 
-![截屏2020-10-03 下午10.35.32](/Users/tjc/Pictures/md-picture/截屏2020-10-03 下午10.35.32.png)
+![截屏2020-10-03 下午10.47.01](../assets/images/blog/截屏2020-10-03 下午10.47.01.png)
 
-点击 Edit Profiles
+在 **Text > Font** 中搜索 Meslo LG 字体，有L、M、S可选，看个人喜好：
 
-在 Color -> Color Presets 中根据个人喜好选择刚刚下载好的配色方案：
+![截屏2020-10-03 下午10.45.08](../assets/images/blog/截屏2020-10-03 下午10.45.08.png)
 
-![截屏2020-10-03 下午10.47.01](/Users/tjc/Pictures/md-picture/截屏2020-10-03 下午10.47.01.png)
+在 **Window** 中可以设置透明度，背景图，打开方式。
 
-在 Text -> Font 中搜索 Meslo LG 字体，有L、M、S可选，看个人喜好：
+在 **Keys > Hotkey Window > Configure Hotkey Window > Hotkey** 可以设置唤出热键。
 
-![截屏2020-10-03 下午10.45.08](/Users/tjc/Pictures/md-picture/截屏2020-10-03 下午10.45.08.png)
-
-在 Window 中可以设置透明度，背景图，打开方式。
-
-在 Keys -> Hotkey Window -> Configure Hotkey Window -> Hotkey 可以设置唤出热键。
-
-在 Window -> space 选择 All space 就可以在任意窗口唤出 shell 了。
+在 **Window > space** 选择 **All space** 就可以在任意窗口唤出 shell 了。
