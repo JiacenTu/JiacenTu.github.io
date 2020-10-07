@@ -177,7 +177,7 @@ Tasks.json 中主要参数意义如下：
 
 可以针对自己的需求对 task.json 进行更改。例如，将（`$file`）改为（`${workspaceFolder/*.cpp}`），这样就会编译工作文件夹中的所有 .cpp 文件；将（`${fileDirname}/${fileBasenameNoExtension}`）改为（`${workspaceFolder}/myProgram.out`），这样可以指定输出文件的名称。
 
-更多变量信息可以查看：<a href="appendix">文章附录</a> 
+更多变量信息可以查看文章附录
 
 ### launch.json
 
@@ -234,7 +234,7 @@ task.json 已经设置完毕，因此运行命令直接将源代码编译为可�
 
 在代码打上断点，按下 f5 即可调试
 
-## <a name="appendix">附录</a>
+## 附录
 
 ### 配置文件预定义变量含义
 
